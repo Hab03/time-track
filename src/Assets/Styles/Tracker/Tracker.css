@@ -1,0 +1,100 @@
+.tracker {
+  border-radius: 25px;
+  margin: 0.5rem auto;
+  overflow: hidden;
+  position: relative;
+  height: 175px;
+  max-width: 400px;
+  width: 90%;
+}
+
+.tracker--Work {
+  background-image: linear-gradient(#ff8c66 25%, #1c1f4a);
+  grid-area: work;
+}
+
+.tracker--Play {
+  background-image: linear-gradient(#56c2e6 25%, #1c1f4a);
+  grid-area: play;
+}
+
+.tracker--Study {
+  background-image: linear-gradient(#ff5c7c 25%, #1c1f4a);
+  grid-area: study;
+}
+
+.tracker--Exercise {
+  background-image: linear-gradient(hsl(145, 58%, 55%) 30%, hsl(246, 80%, 60%));
+  grid-area: exercise;
+}
+
+.tracker--Social {
+  background-image: linear-gradient(#7536d3 25%, #1c1f4a);
+  grid-area: social;
+}
+
+.tracker--SelfCare {
+  background-image: linear-gradient(#f1c65b 25%, #1c1f4a);
+  grid-area: selfCare;
+}
+
+.tracker-inner {
+  border-radius: 25px;
+  cursor: pointer;
+  padding: 1.25rem 1rem;
+  width: 100%;
+  position: absolute;
+  bottom: -1px;
+}
+
+.tracker-inner--activity {
+  background-color: #1c1f4a;
+  height: 75%;
+}
+
+.tracker-inner--activity:hover {
+  background-color: #2a3068;
+}
+
+.tracker-text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50%;
+}
+
+.tracker-text--bottom {
+  align-items: flex-end;
+}
+
+.icon {
+  position: absolute;
+  top: -2px;
+  right: 1rem;
+}
+.ellipsis {
+  cursor: pointer;
+}
+.ellipsis:hover {
+  width: 23px;
+  filter: brightness(250%);
+}
+.previous{
+  padding-bottom: 2rem;
+}
+@media (min-width: 1200px) {
+  .tracker-text--bottom {
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .tracker {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+  }
+  .tracker-inner--activity {
+    height: 80%;
+  }
+}

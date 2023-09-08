@@ -1,0 +1,56 @@
+.tracker--profile {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  grid-area: profile;
+  background: #1c1f4a;
+  padding: 0.5rem;
+}
+
+.tracker-inner--profile {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #5847eb;
+  height: 75%;
+  top: 0;
+}
+
+.profile-img {
+  border: #fff 3px solid;
+  border-radius: 100%;
+  height: 75px;
+  width: 75px;
+}
+
+.name {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.link-container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+.link,
+.ellipsis {
+  display: inline;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .tracker-inner--profile {
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 70%;
+  }
+  .link-container {
+    height: 30%;
+
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  .link {
+    margin: 0;
+  }
+}
